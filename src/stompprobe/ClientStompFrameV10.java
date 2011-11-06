@@ -1,4 +1,4 @@
-package org.hornetq.test.stomp.client;
+package stompprobe;
 
 
 public class ClientStompFrameV10 extends AbstractClientStompFrame

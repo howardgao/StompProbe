@@ -1,2 +1,17 @@
 How to Build
 
+Simply run 
+
+ant
+
+and you will get a stompprobe.jar under build/jar directory.
+
+Other tasks:
+
+compile -- compile the source. All classes are under build/classes directory.
+
+clean -- clean the build directory.
+
+
+
+

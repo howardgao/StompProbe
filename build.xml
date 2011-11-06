@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =========================================================================================== -->
+<!--                                                                                             -->
+<!--                                                                                             -->
+<!-- =========================================================================================== -->
+
+
+<project default="jar" name="StompProbe">
+
+   <target name="init">
+      <mkdir dir="build/classes"/> 
+      <mkdir dir="build/jar"/> 
+   </target>
+
+   <target name="compile" depends="init">
+      <javac srcdir="src" destdir="build/classes">
+      </javac>
+   </target>
+
+   <target name="jar" depends="compile">
+      <jar destfile="build/jar/stompprobe.jar" basedir="build/classes"/>
+   </target>
+
+   <target name="clean">
+      <delete dir="build" quiet="true"/>
+   </target>
+
+</project>
